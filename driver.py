@@ -1,6 +1,6 @@
 from neo4j import GraphDatabase
 
-uri = "bolt://35.242.245.2:7687"
+uri = "neo4j://35.242.245.2:7473"
 driver = GraphDatabase.driver(uri, auth=("neo4j", "ne04j-gcp"))
 
 def create_friend_of(tx, name, friend):
